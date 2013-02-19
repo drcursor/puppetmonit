@@ -1,0 +1,6 @@
+check process <%= process_name %>  with pidfile <%= process_pid %>
+  start program = "<%= process_start %>"
+  stop program  = "<%= process_stop %>"
+  if failed host "<%= process_host %>" port <%= process_port %>
+  protocol <%= process_protocol %> then restart
+
